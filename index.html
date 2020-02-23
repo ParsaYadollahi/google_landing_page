@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -17,13 +21,75 @@
         <div class="navbar_top">
           <li class="li_navbar">About</li>
           <li class="li_navbar">Store</li>
-          <li class="li_navbar li_right" style="float: right;">Images</li>
+          <li
+            class="li_navbar"
+            style="float: right; font-size: 24px; color: rgb(37, 37, 37);"
+          >
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </li>
+          <li
+            class="li_navbar"
+            style="float: right; font-size: 18px; color: rgb(37, 37, 37);"
+          >
+            <i class="fa fa-th" aria-hidden="true"></i>
+          </li>
+          <li class="li_navbar" style="float: right;">Images</li>
           <li class="li_navbar" style="float: right;">Gmail</li>
         </div>
       </ul>
     </div>
-    <div>
-      <img class="google_logo" src="google_logo.jpg" alt="GOOGLE" />
+    <div style="margin-top: 90px;">
+      <div>
+        <img class="google_logo" src="google_logo.jpg" alt="GOOGLE" />
+      </div>
+      <div>
+        <form action="/action_page.php">
+          <div class="input-icons">
+            <i class="fa fa-search icon" aria-hidden="true"></i>
+            <i class="fa fa-microphone icon-right" aria-hidden="true"></i>
+            <input class="input-field" type="text" id="search" name="search" />
+            <br /><br />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container_buttons">
+      <button type="button" class="search-buttons">Google Search</button>
+      <button type="button" class="search-buttons">I'm Feeling Lucky</button>
+      <p style="font-size: 14px;">
+        Google offered in:
+        <a href="https://google.com" style="text-decoration: none;">Francais</a>
+      </p>
+    </div>
+    <div class="bottom-div container_bottom">
+      <div
+        style="border-bottom: 1px solid #e4e4e4; border-top: 1px solid #e4e4e4;"
+      >
+        <ul class="ul_navbar">
+          <div class="navbar_top" style="padding: 5px 5px 5px 10px;">
+            <li
+              class="li_navbar"
+              style="font-size: 18px; color: rgba(0,0,0,.54);"
+            >
+              Canada
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div>
+        <ul class="ul_navbar">
+          <div class="navbar_top" style="padding: 10px;">
+            <li class="li_navbar">Advertising</li>
+            <li class="li_navbar">Business</li>
+            <li class="li_navbar">How Search works</li>
+
+            <li class="li_navbar" style="float: right;">Settings</li>
+            <li class="li_navbar" style="float: right;">Terms</li>
+            <li class="li_navbar" style="float: right;">Privacy</li>
+          </div>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
